@@ -4,13 +4,6 @@ Swipe to clean up your gallery. Review photos one card at a time — swipe **rig
 **left to delete** — then confirm deletions in a batch. Track how much space you've reclaimed
 in the Stats dashboard.
 
-This is a two-part project:
-
-| Part | Owner | Stack |
-| --- | --- | --- |
-| `mobile/` | Student A | React Native + Expo (expo-router), Zustand, Reanimated, expo-media-library |
-| `backend/` | Student B | Node.js + Express (in-memory store, ready to swap for a DB) |
-
 ## Project structure
 
 ```
