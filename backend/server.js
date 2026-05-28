@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 
 const { connectDB } = require('./src/config/db');
+const authRouter = require('./src/routes/auth');
 const sessionsRouter = require('./src/routes/sessions');
 const photosRouter = require('./src/routes/photos');
 const analyticsRouter = require('./src/routes/analytics');
@@ -16,6 +17,7 @@ app.use(express.json());
 
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
 
+app.use('/api/auth', authRouter);
 app.use('/api/sessions', sessionsRouter);
 app.use('/api/photos', photosRouter);
 app.use('/api/analytics', analyticsRouter);
